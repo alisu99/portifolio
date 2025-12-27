@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'D-DIN';
+  src: url('/assets/fonts/D-DIN.otf') format('opentype');
+}
+
+body {
+  font-family: 'D-DIN', sans-serif;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.home-page {
+  background-color: #060606;
+  color: white;
+
+  background-image:
+    linear-gradient(to right,
+      rgba(6, 6, 6, 0.85),
+      rgb(6 6 6 / 85%),
+      rgb(6 6 6 / 91%)),
+    url(/assets/img/black-hole.jpg);
+
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: background-size 10s ease;
+}
+
+.home-page:hover {
+  background-size: 120%;
+}
+
+.btn_ {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+  padding: 7px 15px;
+  border: 1px solid #dcdcdc69;
+  color: #ffffffc2;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 12px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn_::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: gainsboro;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+
+  z-index: -1;
+}
+
+.btn_:hover::before {
+  transform: scaleX(1);
+}
+
+.btn_:hover {
+  color: #000;
+  border-color: gainsboro;
+}
+
+
+.home-page h1 {
+  font-weight: bold;
+  max-width: 400px;
+}
+
+.home-page .lead {
+  font-size: large;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.scroll-indicator::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  border-left: 2px solid gainsboro;
+  border-bottom: 2px solid gainsboro;
+
+  transform: rotate(-45deg);
+  opacity: 0.2;
+
+  animation: fadeArrow 3s infinite ease-in-out;
+}
+
+/* Animação de opacidade */
+@keyframes fadeArrow {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .home-page h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-page .lead {
+    font-size: medium;
+  }
+
+  .home-page .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.sobre-mim {
+  background-color: #070709f2;
+  color: gainsboro;
+  background-image: linear-gradient(to right, rgb(6 6 6 / 82%), rgb(6 6 6 / 92%), rgb(6 6 6 / 96%)), url(/assets/img/bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.habilidades {
+  background-color: #070709f2;
+  color: gainsboro;
+  background-image: linear-gradient(to right, rgb(6 6 6 / 82%), rgb(6 6 6 / 92%), rgb(6 6 6 / 96%)), url(/assets/img/bg3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.font-larger {
+  font-size: larger;
+  margin-top: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
