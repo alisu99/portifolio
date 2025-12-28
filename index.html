@@ -44,34 +44,150 @@
 
     <!-- habilidades -->
     <section class="habilidades vh-100 d-flex align-items-center">
-        <div class="container py-5 d-flex gap-4" style="justify-content: space-around;">
-            <div style="max-width: 500px;">
+        <div class="container py-5 d-flex gap-4 align-items-center" style="justify-content: space-around;">
+            <div style="max-width: 500px;" class="tech_">
                 <h2 class="text-upper">Tecnologias</h2 class="text-upper">
                 <h5>Tenho familiaridade com boas práticas, organização de código, versionamento, padrões de arquitetura
                     e processos de deploy. Já atuei em projetos que envolvem desde aplicações web até configuração de
                     servidores, garantindo estabilidade, performance e segurança.
                 </h5>
             </div>
-            <div style="max-width: 450px;" class="d-flex flex-wrap gap-2">
-                <div class="text-upper btn_ font-larger">Bootstrap</div>
 
-                <div class="text-upper btn_ font-larger">Flask</div>
-                <div class="text-upper btn_ font-larger">HTML</div>
-                <div class="text-upper btn_ font-larger">CSS</div>
-                <div class="text-upper btn_ font-larger">JavaScript</div>
-                <div class="text-upper btn_ font-larger">Dart</div>
-                <div class="text-upper btn_ font-larger">Flutter</div>
-                <div class="text-upper btn_ font-larger">MySQL</div>
-                <div class="text-upper btn_ font-larger">Python</div>
-                <div class="text-upper btn_ font-larger">Django</div>
+            <div style="max-width: 450px;" class="d-flex flex-wrap gap-2">
+                <div class="text-upper btn_ font-larger" data-tech="bootstrap">Bootstrap</div>
+                <div class="text-upper btn_ font-larger" data-tech="flask">Flask</div>
+                <div class="text-upper btn_ font-larger" data-tech="html">HTML</div>
+                <div class="text-upper btn_ font-larger" data-tech="css">CSS</div>
+                <div class="text-upper btn_ font-larger" data-tech="javascript">JavaScript</div>
+                <div class="text-upper btn_ font-larger" data-tech="dart">Dart</div>
+                <div class="text-upper btn_ font-larger" data-tech="flutter">Flutter</div>
+                <div class="text-upper btn_ font-larger" data-tech="mysql">MySQL</div>
+                <div class="text-upper btn_ font-larger" data-tech="python">Python</div>
+                <div class="text-upper btn_ font-larger" data-tech="django">Django</div>
+            </div>
+            <div class="description d-none" data-tech="django">
+                <h4>DJANGO</h4>
+                <p>
+                    Django é um framework web de alto nível para Python que facilita o desenvolvimento rápido e
+                    eficiente de aplicações web seguras e escaláveis. Ele segue o padrão Model-View-Template (MVT) e
+                    oferece uma série de ferramentas integradas, como um sistema de administração automático, ORM
+                    poderoso, roteamento de URLs e suporte a autenticação. Com Django, os desenvolvedores podem
+                    concentrar-se na criação de funcionalidades, enquanto o framework cuida das tarefas comuns do
+                    desenvolvimento web.
+                </p>
+            </div>
+            <div class="description d-none" data-tech="python">
+                <h4>PYTHON</h4>
+                <p>
+                    Python é uma linguagem de programação de alto nível, interpretada e de propósito geral, conhecida
+                    por
+                    sua sintaxe clara e legibilidade. Ela suporta múltiplos paradigmas de programação, incluindo
+                    programação orientada a objetos, funcional e imperativa. Python é amplamente utilizada em diversas
+                    áreas, como desenvolvimento web, ciência de dados, inteligência artificial, automação e muito mais,
+                    graças à sua vasta biblioteca padrão e ecossistema rico de pacotes de terceiros.
+                </p>
+            </div>
+            <div class="description d-none" data-tech="flask">
+                <h4>FLASK</h4>
+                <p>
+                    Flask é um microframework web leve e flexível para Python, projetado para facilitar o
+                    desenvolvimento
+                    de aplicações web simples e escaláveis. Ele segue o padrão WSGI (Web Server Gateway Interface) e
+                    oferece uma abordagem minimalista, permitindo que os desenvolvedores escolham suas próprias
+                    bibliotecas e ferramentas conforme necessário. Flask é conhecido por sua simplicidade, facilidade de
+                    uso e capacidade de expansão, tornando-o uma escolha popular para projetos pequenos a médios.
+                </p>
+            </div>
+            <div class="description d-none" data-tech="html">
+                <h4>HTML</h4>
+                <p>
+                    HTML (HyperText Markup Language) é a linguagem padrão utilizada para criar e estruturar páginas
+                    web. Ela define a estrutura do conteúdo na web por meio de uma série de elementos e tags, permitindo
+                    a
+                    incorporação de texto, imagens, links, vídeos e outros recursos multimídia. HTML é a base da web e é
+                    essencial para o desenvolvimento de sites e aplicações web.
+                </p>
+            </div>
+            <div class="description d-none" data-tech="css">
+                <h4>CSS</h4>
+                <p>
+                    CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para descrever a apresentação e o
+                    layout de documentos HTML. Com o CSS, os desenvolvedores podem controlar a aparência visual de
+                    elementos na página, incluindo cores, fontes, espaçamento, posicionamento e responsividade. O CSS
+                    permite separar o conteúdo da estrutura, facilitando a manutenção e a personalização do design de
+                    sites e aplicações web.
+                </p>
+            </div>
+            <div class="description d-none" data-tech="bootstrap">
+                <h4>BOOTSTRAP</h4>
+                <p>
+                    Bootstrap é um framework front-end open source para desenvolvimento web, que oferece uma série de
+                    componentes e utilitários pré-construídos para facilitar a criação de interfaces responsivas e
+                    modernas. Ele inclui bibliotecas CSS e JavaScript, além de uma grade flexível e componentes como
+                    botões, navegação, formulários e carrosséis. Bootstrap é amplamente utilizado por desenvolvedores
+                    para criar sites e aplicações web com design consistente e responsivo.
+                </p>
+            </div>
+            <div class="description d-none" data-tech="javascript">
+                <h4>JAVASCRIPT</h4>
+                <p>
+                    JavaScript é uma linguagem de programação de alto nível, interpretada e de propósito geral,
+                    conhecida
+                    por
+                    sua sintaxe clara e legibilidade. Ela suporta múltiplos paradigmas de programação, incluindo
+                    programação orientada a objetos, funcional e imperativa. JavaScript é amplamente utilizada em
+                    diversas
+                    áreas, como desenvolvimento web, ciência de dados, inteligência artificial, automação e muito mais,
+                    graças à sua vasta biblioteca padrão e ecossistema rico de pacotes de terceiros.
+                </p>
+            </div>
+            <div class="description d-none" data-tech="dart">
+                <h4>DART</h4>
+                <p>
+                    Dart é uma linguagem de programação desenvolvida pela Google, projetada para ser eficiente,
+                    produtiva
+                    e fácil de aprender. Ela é amplamente utilizada para o desenvolvimento de aplicações móveis, web e
+                    de servidor, especialmente em conjunto com o framework Flutter. Dart oferece recursos modernos,
+                    como tipagem estática opcional, programação assíncrona e uma sintaxe clara, tornando-a uma escolha
+                    popular para
+                    desenvolvedores que buscam criar aplicações de alto desempenho e escaláveis.
+                </p>
+            </div>
+            <div class="description d-none" data-tech="flutter">
+                <h4>FLUTTER</h4>
+                <p>
+                    Flutter é um framework de código aberto desenvolvido pela Google para a criação de aplicações
+                    móveis,
+                    web e desktop a partir de uma única base de código. Ele utiliza a linguagem de programação Dart e
+                    oferece uma ampla gama de widgets personalizáveis, permitindo que os desenvolvedores criem
+                    interfaces
+                    de usuário atraentes e responsivas. Flutter é conhecido por seu desempenho rápido, desenvolvimento
+                    ágil e capacidade de criar experiências nativas em várias plataformas.
+                </p>
+            </div>
+            <div class="description d-none" data-tech="mysql">
+                <h4>MySQL</h4>
+                <p>
+                    MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto,
+                    amplamente
+                    utilizado para armazenar, organizar e gerenciar dados em aplicações web e empresariais. Ele utiliza
+                    a
+                    linguagem SQL (Structured Query Language) para realizar operações de consulta, inserção, atualização
+                    e
+                    exclusão de dados. MySQL é conhecido por sua confiabilidade, desempenho e escalabilidade, sendo uma
+                    escolha popular para desenvolvedores e administradores de banco de dados em todo o mundo.
+                </p>
             </div>
         </div>
+
+
     </section>
 
     <!-- footer -->
     <!-- <footer class="py-3 text-center bg-black text-secondary">
         © 2025 Alisson Gustavo Alencar Santos. Todos os direitos reservados.
     </footer> -->
+<script src="/assets/js/script.js"></script>
 </body>
 
 </html>
