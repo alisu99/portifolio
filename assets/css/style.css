@@ -7,6 +7,17 @@ body {
   font-family: 'D-DIN', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(10, 10, 10, 0.53);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+}
+
 .text-upper {
   text-transform: uppercase;
 }
@@ -14,14 +25,7 @@ body {
 .home-page {
   background-color: #060606;
   color: white;
-
-  background-image:
-    linear-gradient(to right,
-      rgba(6, 6, 6, 0.85),
-      rgb(6 6 6 / 85%),
-      rgb(6 6 6 / 91%)),
-    url(/assets/img/black-hole.jpg);
-
+  background-image: linear-gradient(to right, rgb(6 6 6), rgb(6 6 6 / 93%), rgb(6 6 6 / 91%)), url(/assets/img/black-hole.jpg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -156,7 +160,7 @@ body {
 }
 
 .font-larger {
-  font-size: larger;
+  font-size: medium;
   margin-top: 0;
   flex-grow: 1;
   display: flex;
@@ -218,4 +222,55 @@ body {
   to {
     transform: translateX(-40px);
   }
+}
+
+.projetos {
+  background-color: #070709f2;
+  color: gainsboro;
+  background-image: linear-gradient(to right, rgb(6 6 6 / 97%), rgb(6 6 6 / 92%), rgb(6 6 6 / 96%)), url(/assets/img/21620.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projetos .card-project {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 3px;
+  border: 1px solid #dcdcdc54;
+  padding: 10px;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.card-project img {
+  width: 100%;
+  opacity: 0.5;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  transition: .30s all;
+}
+
+.card-project:hover {
+  img {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projetos {
+    padding: 6rem 0;
+  }
+}
+
+.contato {
+  padding: 10rem 0;
+  background-color: #070709f2;
+  color: gainsboro;
+  background-image: linear-gradient(to right, rgb(6 6 6 / 97%), rgb(6 6 6 / 92%), rgb(6 6 6 / 96%)), url(/assets/img/contato.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
