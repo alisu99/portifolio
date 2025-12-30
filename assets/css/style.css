@@ -29,11 +29,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition: background-size 10s ease;
-}
-
-.home-page:hover {
-  background-size: 120%;
 }
 
 .btn_ {
