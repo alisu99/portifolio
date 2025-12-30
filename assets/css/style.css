@@ -131,6 +131,18 @@ body {
     text-align: center;
   }
 
+  .sobre-mim {
+    text-align: center;
+  }
+
+  .habilidades {
+    text-align: center;
+  }
+
+  .projetos h2 {
+    text-align: center;
+  }
+
   .home-page .lead {
     font-size: medium;
   }
