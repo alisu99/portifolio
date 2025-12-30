@@ -26,10 +26,9 @@ body {
   background-color: #060606;
   color: white;
   background-image: linear-gradient(to right, rgb(6 6 6), rgb(6 6 6 / 93%), rgb(6 6 6 / 91%)), url(/assets/img/black-hole.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   transition: background-size 10s ease;
 }
 
@@ -139,6 +138,35 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
+  .habilidades .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .sobre-mim .btn_ {
+    align-self: center;
+  }
+
+  .projetos .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projetos {
+    padding-bottom: 2rem;
+  }
+
+  .contato .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contato .lead {
+    text-align: center;
+  }
 }
 
 .sobre-mim {
@@ -157,6 +185,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .font-larger {
