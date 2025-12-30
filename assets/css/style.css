@@ -294,7 +294,7 @@ body {
   background-color: #070709f2;
   color: gainsboro;
   background-image: linear-gradient(to right, rgb(6 6 6 / 97%), rgb(6 6 6 / 92%), rgb(6 6 6 / 96%)), url(/assets/img/contato.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
