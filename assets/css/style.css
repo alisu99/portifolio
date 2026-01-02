@@ -196,7 +196,7 @@ body {
 .habilidades {
   background-color: #070709f2;
   color: gainsboro;
-  background-image: linear-gradient(to right, rgb(6 6 6 / 82%), rgb(6 6 6 / 92%), rgb(6 6 6 / 96%)), url(/assets/img/bg3.png);
+  background-image: linear-gradient(to right, rgb(6 6 6 / 82%), rgb(6 6 6 / 92%), rgb(6 6 6 / 96%)), url(/assets/img/bg3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
