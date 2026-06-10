@@ -1,416 +1,460 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="shortcut icon" href="/assets/img/icon.png" type="image/x-icon">
-    <title>Alisson Alencar | Bem-vindo!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alisson Gustavo · Engenheiro de Software Backend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
- 
 <body>
-    <!-- apresentação -->
-    <section class="home-page d-flex flex-column justify-content-center vh-100">
-        <div class="container">
-            <h1 class="text-upper">Alisson Gustavo Alencar Santos</h1>
-            <h5 class="lead">Desenvolvedor Backend Pleno | Python (Django/Flask) | APIs REST | Flutter (Dart) | MySQL</h5>
-            <div class="d-flex gap-2">
-                <a class="text-upper btn_" target="_blank" href="/assets/pdf/Curriculo_Alisson_Gustavo_Backend.pdf">Currículo</a>
-                <a class="text-upper btn_" href="https://www.linkedin.com/in/alisson-alencar99/"
-                    target="_blank">LinkedIn</a>
-                <a class="text-upper btn_" href="https://w.app/ycgq5k" target="_blank">Entrar em contato</a>
-            </div>
-        </div>
-    </section>
-    <div class="divider"></div>
-    <!-- sobre mim -->
-    <section class="sobre-mim vh-100 d-flex align-items-center">
-        <div class="container py-5 d-flex justify-content-end">
-            <div style="max-width: 700px;" class="d-flex align-items-start flex-column">
-                <h2 class="text-upper w-100">Sobre Mim</h2>
-                <h5>
-                    Sou um desenvolvedor apaixonado por criar soluções inovadoras e eficientes,
-                    com foco em aplicações backend. Acredito que a tecnologia tem o poder de
-                    transformar vidas e estou sempre em busca de novos desafios para aprimorar
-                    minhas habilidades e contribuir para projetos significativos.
 
-                    Formado em Redes de Computadores pela Estácio e cursando Engenharia de Software pela UNICV,
-                    tenho experiência tanto na área de infraestrutura de redes quanto na de
-                    desenvolvimento. Atualmente, busco expandir meus conhecimentos e aprimorar o
-                    que já aprendi ao longo da minha jornada.
-                </h5>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">AG<span class="dot">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a class="nav-cta" href="assets/pdf/Curriculo_Alisson_Gustavo_Backend.pdf" target="_blank">Currículo</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#sobre">Sobre</a>
+      <a href="#stack">Stack</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
 
-                <a class="text-upper btn_" href="https://w.app/ycgq5k" target="_blank">Entrar em contato</a>
-            </div>
-        </div>
-    </section>
-    <div class="divider"></div>
-    <!-- habilidades -->
-    <section class="habilidades d-flex align-items-center">
-        <div class="container py-5 d-flex align-items-center" style="justify-content: space-around;">
-            <div style="max-width: 500px;" class="tech_">
-                <h2 class="text-upper">Tecnologias</h2 class="text-upper">
-                <h5>Tenho familiaridade com boas práticas, organização de código, versionamento, padrões de arquitetura
-                    e processos de deploy. Já atuei em projetos que envolvem desde aplicações web até configuração de
-                    servidores, garantindo estabilidade, performance e segurança.
-                </h5>
-            </div>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow"><span class="status-dot"></span> Disponível para trabalho remoto</p>
+      <h1 class="hero-title">
+        Alisson Gustavo<br>
+        <span class="hero-title-accent">Alencar Santos</span>
+      </h1>
+      <p class="hero-subtitle">Engenheiro de Software Backend — Python · Django · APIs REST</p>
 
-            <div style="max-width: 450px;" class="d-flex flex-wrap gap-2">
-                <div class="text-upper btn_ font-larger" data-tech="bootstrap">Bootstrap</div>
-                <div class="text-upper btn_ font-larger" data-tech="flask">Flask</div>
-                <div class="text-upper btn_ font-larger" data-tech="html">HTML</div>
-                <div class="text-upper btn_ font-larger" data-tech="css">CSS</div>
-                <div class="text-upper btn_ font-larger" data-tech="javascript">JavaScript</div>
-                <div class="text-upper btn_ font-larger" data-tech="react">React</div>
-                <div class="text-upper btn_ font-larger" data-tech="dart">Dart</div>
-                <div class="text-upper btn_ font-larger" data-tech="flutter">Flutter</div>
-                <div class="text-upper btn_ font-larger" data-tech="mysql">MySQL</div>
-                <div class="text-upper btn_ font-larger" data-tech="python">Python</div>
-                <div class="text-upper btn_ font-larger" data-tech="django">Django</div>
-            </div>
-            <div class="description d-none" data-tech="django">
-                <h4>DJANGO</h4>
-                <p>
-                    Django é um framework web de alto nível para Python que facilita o desenvolvimento rápido e
-                    eficiente de aplicações web seguras e escaláveis. Ele segue o padrão Model-View-Template (MVT) e
-                    oferece uma série de ferramentas integradas, como um sistema de administração automático, ORM
-                    poderoso, roteamento de URLs e suporte a autenticação. Com Django, os desenvolvedores podem
-                    concentrar-se na criação de funcionalidades, enquanto o framework cuida das tarefas comuns do
-                    desenvolvimento web.
-                </p>
-            </div>
-            <div class="description d-none" data-tech="python">
-                <h4>PYTHON</h4>
-                <p>
-                    Python é uma linguagem de programação de alto nível, interpretada e de propósito geral, conhecida
-                    por
-                    sua sintaxe clara e legibilidade. Ela suporta múltiplos paradigmas de programação, incluindo
-                    programação orientada a objetos, funcional e imperativa. Python é amplamente utilizada em diversas
-                    áreas, como desenvolvimento web, ciência de dados, inteligência artificial, automação e muito mais,
-                    graças à sua vasta biblioteca padrão e ecossistema rico de pacotes de terceiros.
-                </p>
-            </div>
-            <div class="description d-none" data-tech="flask">
-                <h4>FLASK</h4>
-                <p>
-                    Flask é um microframework web leve e flexível para Python, projetado para facilitar o
-                    desenvolvimento
-                    de aplicações web simples e escaláveis. Ele segue o padrão WSGI (Web Server Gateway Interface) e
-                    oferece uma abordagem minimalista, permitindo que os desenvolvedores escolham suas próprias
-                    bibliotecas e ferramentas conforme necessário. Flask é conhecido por sua simplicidade, facilidade de
-                    uso e capacidade de expansão, tornando-o uma escolha popular para projetos pequenos a médios.
-                </p>
-            </div>
-            <div class="description d-none" data-tech="html">
-                <h4>HTML</h4>
-                <p>
-                    HTML (HyperText Markup Language) é a linguagem padrão utilizada para criar e estruturar páginas
-                    web. Ela define a estrutura do conteúdo na web por meio de uma série de elementos e tags, permitindo
-                    a
-                    incorporação de texto, imagens, links, vídeos e outros recursos multimídia. HTML é a base da web e é
-                    essencial para o desenvolvimento de sites e aplicações web.
-                </p>
-            </div>
-            <div class="description d-none" data-tech="css">
-                <h4>CSS</h4>
-                <p>
-                    CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para descrever a apresentação e o
-                    layout de documentos HTML. Com o CSS, os desenvolvedores podem controlar a aparência visual de
-                    elementos na página, incluindo cores, fontes, espaçamento, posicionamento e responsividade. O CSS
-                    permite separar o conteúdo da estrutura, facilitando a manutenção e a personalização do design de
-                    sites e aplicações web.
-                </p>
-            </div>
-            <div class="description d-none" data-tech="bootstrap">
-                <h4>BOOTSTRAP</h4>
-                <p>
-                    Bootstrap é um framework front-end open source para desenvolvimento web, que oferece uma série de
-                    componentes e utilitários pré-construídos para facilitar a criação de interfaces responsivas e
-                    modernas. Ele inclui bibliotecas CSS e JavaScript, além de uma grade flexível e componentes como
-                    botões, navegação, formulários e carrosséis. Bootstrap é amplamente utilizado por desenvolvedores
-                    para criar sites e aplicações web com design consistente e responsivo.
-                </p>
-            </div>
-            <div class="description d-none" data-tech="javascript">
-                <h4>JAVASCRIPT</h4>
-                <p>
-                    JavaScript é uma linguagem de programação de alto nível, interpretada e de propósito geral,
-                    conhecida
-                    por
-                    sua sintaxe clara e legibilidade. Ela suporta múltiplos paradigmas de programação, incluindo
-                    programação orientada a objetos, funcional e imperativa. JavaScript é amplamente utilizada em
-                    diversas
-                    áreas, como desenvolvimento web, ciência de dados, inteligência artificial, automação e muito mais,
-                    graças à sua vasta biblioteca padrão e ecossistema rico de pacotes de terceiros.
-                </p>
-            </div>
-            <div class="description d-none" data-tech="react">
-                <h4>REACT</h4>
-                <p>
-                    O React (também denominado React.js ou ReactJS) é uma biblioteca front-end JavaScript de código
-                    aberto com foco em criar interfaces de usuário em páginas web, criado em 2011 pelo Facebook, com o
-                    objetivo de otimizar a atualização e a sincronização de atividades simultâneas no feed de notícias
-                    da rede social e melhorar a manutenção de código, com a criação de views declarativas e componentes.
-                </p>
-            </div>
-            <div class="description d-none" data-tech="dart">
-                <h4>DART</h4>
-                <p>
-                    Dart é uma linguagem de programação desenvolvida pela Google, projetada para ser eficiente,
-                    produtiva
-                    e fácil de aprender. Ela é amplamente utilizada para o desenvolvimento de aplicações móveis, web e
-                    de servidor, especialmente em conjunto com o framework Flutter. Dart oferece recursos modernos,
-                    como tipagem estática opcional, programação assíncrona e uma sintaxe clara, tornando-a uma escolha
-                    popular para
-                    desenvolvedores que buscam criar aplicações de alto desempenho e escaláveis.
-                </p>
-            </div>
-            <div class="description d-none" data-tech="flutter">
-                <h4>FLUTTER</h4>
-                <p>
-                    Flutter é um framework de código aberto desenvolvido pela Google para a criação de aplicações
-                    móveis,
-                    web e desktop a partir de uma única base de código. Ele utiliza a linguagem de programação Dart e
-                    oferece uma ampla gama de widgets personalizáveis, permitindo que os desenvolvedores criem
-                    interfaces
-                    de usuário atraentes e responsivas. Flutter é conhecido por seu desempenho rápido, desenvolvimento
-                    ágil e capacidade de criar experiências nativas em várias plataformas.
-                </p>
-            </div>
-            <div class="description d-none" data-tech="mysql">
-                <h4>MySQL</h4>
-                <p>
-                    MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto,
-                    amplamente
-                    utilizado para armazenar, organizar e gerenciar dados em aplicações web e empresariais. Ele utiliza
-                    a
-                    linguagem SQL (Structured Query Language) para realizar operações de consulta, inserção, atualização
-                    e
-                    exclusão de dados. MySQL é conhecido por sua confiabilidade, desempenho e escalabilidade, sendo uma
-                    escolha popular para desenvolvedores e administradores de banco de dados em todo o mundo.
-                </p>
-            </div>
+      <!-- Terminal animado -->
+      <div class="terminal" id="terminal">
+        <div class="terminal-bar">
+          <span class="tb tb-red"></span>
+          <span class="tb tb-yellow"></span>
+          <span class="tb tb-green"></span>
+          <span class="terminal-title">alisson@dev:~</span>
         </div>
-    </section>
-    <div class="divider"></div>
-    <section class="projetos d-flex align-items-center flex-column gap-4">
-        <div class="container">
-            <div>
-                <h2 class="text-upper mt-4">Minhas experiências</h2>
-                <div>
-                    <h4>Desenvolvedor FullStack | Faculdade Malta | 2024 - Atualmente</h4>
-                    <ul>
-                        <li>Desenvolvimento de funcionalidades back-end em Python (Django/Flask) e integrações com APIs.
-                        </li>
-                        <li>Criação e manutenção de interfaces web utilizando JavaScript, HTML, CSS e Bootstrap.</li>
-                        <li>Modelagem e gerenciamento de bancos de dados (MySQL / SQL Server).</li>
-                        <li>Participação em todo o ciclo de desenvolvimento: análise, desenvolvimento, testes e deploy.
-                        </li>
-                        <li>Colaboração com equipe multidisciplinar para evolução de sistemas e melhoria de processos
-                            internos.</li>
-                    </ul>
-                </div>
-                <hr>
-                <div>
-                    <h4>Estagiário de TI | Portal GP1 | 2023 - 2024</h4>
-                    <ul>
-                        <li>Suporte técnico a usuários internos, garantindo disponibilidade e funcionamento dos recursos
-                            de TI.
-                        </li>
-                        <li>Diagnóstico e resolução de problemas relacionados a hardware, software e rede.</li>
-                        <li>Configuração e manutenção de sistemas operacionais, dispositivos e aplicações corporativas.
-                        </li>
-                        <li>Monitoramento da infraestrutura para prevenção de falhas e melhoria contínua.</li>
-                        <li>Configuração de ativos de rede (switches, impressoras, roteadores) e instalação de câmeras
-                            IP.</li>
-                    </ul>
-                </div>
-                <hr>
-            </div>
+        <div class="terminal-body">
+          <div class="terminal-line" id="terminalOutput"></div>
+          <span class="cursor" id="cursor">▮</span>
         </div>
-        <div class="container">
-            <h2 class="text-upper">Projetos</h2>
-            <h5 class="lead">Alguns projetos relevantes</h5>
-        </div>
-        <div class="container d-flex flex-wrap gap-4">
-            <div class="card-project d-flex flex-column gap-2 justify-content-between">
-                <div>
-                    <div>
-                        <img src="/assets/img/projetos/semju.png" alt="SEMJUV - Teresina-PI">
-                        <div>
-                            <h3>Portal Juventude</h3>
-                        </div>
-                        <div>Um site para a Secretaria Municipal da Juventude de Teresina-PI.</div>
-                    </div>
-                    <div>
-                        <i class="devicon-python-plain"></i>
-                        <i class="devicon-django-plain"></i>
-                        <i class="devicon-html5-plain"></i>
-                        <i class="devicon-css3-plain"></i>
-                        <i class="devicon-bootstrap-plain"></i>
-                        <i class="devicon-javascript-plain"></i>
-                        <i class="devicon-mysql-original"></i>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <a class="btn_ text-upper" href="https://juventude.teresina.pi.gov.br/" target="_blank">Ver
-                        projeto</a>
-                </div>
-            </div>
+      </div>
 
-            <div class="card-project d-flex flex-column gap-2">
-                <div>
-                    <div>
-                        <img src="/assets/img/projetos/spacex.png" alt="SpaceX">
-                        <div>
-                            <h3>SpaceX</h3>
-                        </div>
-                        <div>Um clone do site da <a target="_blank" href="https://www.spacex.com/">SpaceX</a> para fins
-                            de
-                            estudo em React.
-                        </div>
-                    </div>
-                    <div>
-                        <i class="devicon-javascript-plain"></i>
-                        <i class="devicon-react-original"></i>
-                        <i class="devicon-html5-plain"></i>
-                        <i class="devicon-css3-plain"></i>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <a class="btn_ text-upper" href="https://spacex-clone-snowy.vercel.app/" target="_blank">Ver
-                        projeto</a>
-                </div>
-            </div>
+      <div class="hero-actions">
+        <a href="#projetos" class="btn-primary">Ver projetos</a>
+        <a href="#contato" class="btn-ghost">Entrar em contato</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">3+</span>
+        <span class="stat-label">Anos de<br>experiência</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">6+</span>
+        <span class="stat-label">Sistemas em<br>produção</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">1</span>
+        <span class="stat-label">Órgão público<br>atendido</span>
+      </div>
+    </div>
+  </section>
 
-            <div class="card-project d-flex flex-column gap-2">
-                <div>
-                    <div>
-                        <img src="/assets/img/projetos/maltaup.png" alt="Malta Up">
-                        <div>
-                            <h3>MaltaUP</h3>
-                        </div>
-                        <div>Uma plataforma de cursos pagos ou gratuitos, com api de pagamento da Efí Bank.</div>
-                    </div>
-                    <div>
-                        <i class="devicon-python-plain"></i>
-                        <i class="devicon-django-plain"></i>
-                        <i class="devicon-html5-plain"></i>
-                        <i class="devicon-css3-plain"></i>
-                        <i class="devicon-bootstrap-plain"></i>
-                        <i class="devicon-javascript-plain"></i>
-                        <i class="devicon-mysql-original"></i>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <a class="btn_ text-upper" href="https://www.maltaup.com.br/" target="_blank">Ver projeto</a>
-                </div>
-            </div>
-
-            <div class="card-project d-flex flex-column gap-2">
-                <div>
-                    <div>
-                        <img src="/assets/img/projetos/api.png" alt="Api Faculdade Malta">
-                        <div>
-                            <h3>API: Faculdade Malta</h3>
-                        </div>
-                        <div>Uma API de gerenciamento e integração, através de Leads de alunos que se inscrevem no
-                            sistema
-                            da faculdade.</div>
-                    </div>
-                    <div>
-                        <i class="devicon-python-plain"></i>
-                        <i class="devicon-django-plain"></i>
-                        <i class="devicon-djangorest-plain"></i>
-                        <i class="devicon-mysql-original"></i>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-end opacity">
-                    <a class="btn_ text-upper">Ver projeto</a>
-                </div>
-            </div>
-
-            <div class="card-project d-flex flex-column gap-2 justify-content-between">
-                <div>
-                    <div>
-                        <img src="/assets/img/projetos/sgt.png" alt="">
-                        <div>
-                            <h3>SGT - Sistema de Gestão de Trânsito</h3>
-                        </div>
-                        <div>Um sistema web completo para gerenciamento de sinistros de trânsito.</div>
-                    </div>
-                    <div>
-                        <i class="devicon-python-plain"></i>
-                        <i class="devicon-django-plain"></i>
-                        <i class="devicon-html5-plain"></i>
-                        <i class="devicon-css3-plain"></i>
-                        <i class="devicon-bootstrap-plain"></i>
-                        <i class="devicon-javascript-plain"></i>
-                        <i class="devicon-mysql-original"></i>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <a class="btn_ text-upper" target="_blank" href="https://agtplma.site/login/?next=/">Ver projeto</a>
-                </div>
-            </div>
-
-            <div class="card-project d-flex flex-column gap-2 justify-content-between">
-                <div>
-                    <div>
-                        <img src="/assets/img/projetos/faculdade-malta.png" alt="Faculdade Malta">
-                        <div>
-                            <h3>Faculdade Malta</h3>
-                        </div>
-                        <div>Um site institucional da Faculdade em que trabalho.</div>
-                    </div>
-                    <div>
-                        <i class="devicon-python-plain"></i>
-                        <i class="devicon-django-plain"></i>
-                        <i class="devicon-html5-plain"></i>
-                        <i class="devicon-css3-plain"></i>
-                        <i class="devicon-bootstrap-plain"></i>
-                        <i class="devicon-javascript-plain"></i>
-                        <i class="devicon-mysql-original"></i>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <a class="btn_ text-upper" target="_blank" href="https://faculdademalta.edu.br/">Ver projeto</a>
-                </div>
-            </div>
+  <!-- SOBRE -->
+  <section class="section sobre" id="sobre">
+    <div class="container">
+      <div class="section-grid">
+        <div class="section-left">
+          <p class="eyebrow">01 — Sobre mim</p>
+          <h2 class="section-title">Construo backends que<br><em>ficam de pé</em></h2>
         </div>
-        <div class="container">
-            <h5 class="lead">Quer ter o seu projeto?</h5>
-            <a class="btn_ text-upper" href="https://w.app/ycgq5k">Entrar em contato</a>
+        <div class="section-right">
+          <p class="sobre-text">
+            Sou desenvolvedor Backend com foco em <strong>Python, Django e Django REST Framework</strong>, especializado em sistemas web escaláveis que já estão em produção.
+          </p>
+          <p class="sobre-text">
+            Tenho experiência na criação de <strong>APIs RESTful com autenticação JWT</strong>, integração com bancos de dados relacionais (PostgreSQL e MySQL), e deploy em ambientes Linux/VPS. Aplico boas práticas como Clean Code, SOLID e Clean Architecture no dia a dia.
+          </p>
+          <p class="sobre-text">
+            Formado em Redes de Computadores pela Estácio e cursando Engenharia de Software pela UNICIVE. Essa base de infraestrutura me dá uma visão mais completa do sistema — do banco de dados ao servidor.
+          </p>
+          <div class="sobre-badges">
+            <span class="badge">Clean Code</span>
+            <span class="badge">SOLID</span>
+            <span class="badge">Clean Architecture</span>
+            <span class="badge">REST</span>
+            <span class="badge">JWT</span>
+            <!-- <span class="badge">Docker</span> -->
+          </div>
         </div>
-    </section>
-    <div class="divider"></div>
-    <section class="contato vh-50">
-        <div class="container">
-            <h2 class="text-upper">Vamos conversar!</h2>
-            <h5 class="lead" style="max-width: 400px;">
-                Entre em contato para conversar sobre oportunidades, projetos ou ideias.
-                Estou sempre aberto a novos desafios e colaborações.
-            </h5>
-            <div class="d-flex align-items-center gap-2">
-                <a class="btn_ text-upper" target="_blank" href="mailto:alissonsts910@gmail.com">Email</a>
-                <a class="btn_ text-upper" target="_blank" href="https://www.linkedin.com/in/alisson-alencar99/"><i
-                        class="devicon-linkedin-plain"></i> Linkedin</a>
-                <a class="btn_ text-upper" target="_blank" href="https://github.com/alisu99/"><i
-                        class="devicon-github-original"></i> Github</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section stack-section" id="stack">
+    <div class="container">
+      <p class="eyebrow centered">02 — Stack</p>
+      <h2 class="section-title centered">Tecnologias que uso<br>no dia a dia</h2>
+
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h4 class="stack-group-title">Backend</h4>
+          <div class="stack-items">
+            <div class="stack-item primary">
+              <i class="devicon-python-plain colored stack-icon"></i>
+              <span class="stack-name">Python</span>
             </div>
+            <div class="stack-item primary">
+              <i class="devicon-django-plain colored stack-icon"></i>
+              <span class="stack-name">Django</span>
+            </div>
+            <div class="stack-item primary">
+              <i class="devicon-djangorest-plain colored stack-icon"></i>
+              <span class="stack-name">DRF</span>
+            </div>
+            <div class="stack-item">
+              <i class="devicon-flask-original stack-icon"></i>
+              <span class="stack-name">Flask</span>
+            </div>
+            <div class="stack-item">
+              <i class="devicon-jsonwebtokens-plain colored stack-icon"></i>
+              <span class="stack-name">JWT</span>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- footer -->
-    <div class="divider"></div>
-    <footer class="py-3 text-center bg-black text-secondary">
-        <div class="mt-4">© 2025 Alisson Gustavo Alencar Santos. Todos os direitos reservados.</div>
-    </footer>
-    <script src="/assets/js/script.js"></script>
+
+        <div class="stack-group">
+          <h4 class="stack-group-title">Banco de Dados</h4>
+          <div class="stack-items">
+            <div class="stack-item primary">
+              <i class="devicon-postgresql-plain colored stack-icon"></i>
+              <span class="stack-name">PostgreSQL</span>
+            </div>
+            <div class="stack-item primary">
+              <i class="devicon-mysql-original colored stack-icon"></i>
+              <span class="stack-name">MySQL</span>
+            </div>
+            <div class="stack-item">
+              <i class="devicon-sqlite-plain colored stack-icon"></i>
+              <span class="stack-name">SQLite</span>
+            </div>
+            <div class="stack-item">
+              <i class="devicon-microsoftsqlserver-plain colored stack-icon"></i>
+              <span class="stack-name">SQL Server</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <h4 class="stack-group-title">DevOps & Infra</h4>
+          <div class="stack-items">
+            <!-- <div class="stack-item primary">
+              <i class="devicon-docker-plain colored stack-icon"></i>
+              <span class="stack-name">Docker</span>
+            </div> -->
+            <div class="stack-item primary">
+              <i class="devicon-git-plain colored stack-icon"></i>
+              <span class="stack-name">Git</span>
+            </div>
+            <div class="stack-item primary">
+              <i class="devicon-github-original stack-icon"></i>
+              <span class="stack-name">GitHub</span>
+            </div>
+            <div class="stack-item">
+              <i class="devicon-linux-plain colored stack-icon"></i>
+              <span class="stack-name">Linux</span>
+            </div>
+            <div class="stack-item">
+              <i class="devicon-ubuntu-plain colored stack-icon"></i>
+              <span class="stack-name">Ubuntu / VPS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <h4 class="stack-group-title">Frontend & Mobile</h4>
+          <div class="stack-items">
+            <div class="stack-item">
+              <i class="devicon-react-original colored stack-icon"></i>
+              <span class="stack-name">React</span>
+            </div>
+            <div class="stack-item">
+              <i class="devicon-flutter-plain colored stack-icon"></i>
+              <span class="stack-name">Flutter</span>
+            </div>
+            <div class="stack-item">
+              <i class="devicon-dart-plain colored stack-icon"></i>
+              <span class="stack-name">Dart</span>
+            </div>
+            <div class="stack-item">
+              <i class="devicon-javascript-plain colored stack-icon"></i>
+              <span class="stack-name">JavaScript</span>
+            </div>
+            <div class="stack-item">
+              <i class="devicon-html5-plain colored stack-icon"></i>
+              <span class="stack-name">HTML / CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section class="section experiencia-section" id="experiencia">
+    <div class="container">
+      <p class="eyebrow">03 — Experiência</p>
+      <h2 class="section-title">Trajetória profissional</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-period">Abr/2024 — Atual</span>
+            <span class="timeline-badge current">Atual</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Desenvolvedor Full Stack</h3>
+            <p class="timeline-company">Faculdade Malta · Teresina, PI</p>
+            <ul class="timeline-list">
+              <li>Desenvolvimento e manutenção de APIs RESTful com Django e DRF para integração entre sistemas internos</li>
+              <li>Arquitetura e modelagem de banco de dados relacional com MySQL e SQLite, incluindo otimização de queries</li>
+              <li>Deploy e manutenção de aplicações em servidores Linux/VPS garantindo disponibilidade institucional</li>
+              <li>Implementação de melhorias contínuas e suporte técnico em sistemas web ativos em produção</li>
+              <li>Versionamento e colaboração com Git/GitHub, incluindo code review e fluxo de branches</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-period">2022 — 2024</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Desenvolvedor Backend — Freelancer</h3>
+            <p class="timeline-company">Autônomo</p>
+            <ul class="timeline-list">
+              <li>Entrega de sistemas web completos com Django para clientes de diferentes segmentos</li>
+              <li>Desenvolvimento de APIs para integração com serviços externos e automação de processos</li>
+              <li>Implementação de soluções com foco em desempenho, segurança e facilidade de manutenção</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-period">2023 — 2024</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Estagiário de TI</h3>
+            <p class="timeline-company">Portal GP1 · Teresina, PI</p>
+            <ul class="timeline-list">
+              <li>Suporte técnico a usuários internos, garantindo disponibilidade dos recursos de TI</li>
+              <li>Diagnóstico e resolução de problemas em hardware, software e rede</li>
+              <li>Configuração de ativos de rede: switches, roteadores, impressoras e câmeras IP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="section projetos-section" id="projetos">
+    <div class="container">
+      <p class="eyebrow centered">04 — Projetos</p>
+      <h2 class="section-title centered">Sistemas em produção</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-tag">Órgão Público · Em produção</div>
+            <div class="project-links">
+              <a href="https://juventude.teresina.pi.gov.br/" target="_blank" class="project-link">↗ Ver projeto</a>
+            </div>
+          </div>
+          <h3 class="project-title">Portal Juventude — SEMJUV</h3>
+          <p class="project-desc">Sistema institucional em produção para a Secretaria Municipal da Juventude da Prefeitura de Teresina-PI. Arquitetura Django escalável, preparada para expansões futuras.</p>
+          <div class="project-tech">
+            <span>Django</span><span>Python</span><span>JavaScript</span><span>MySQL</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-tag">Sistema web · Em produção</div>
+            <div class="project-links">
+              <a href="https://faculdademalta.edu.br/" target="_blank" class="project-link">↗ Ver projeto</a>
+            </div>
+          </div>
+          <h3 class="project-title">Faculdade Malta — Site Institucional</h3>
+          <p class="project-desc">Portal institucional com CRM integrado e painel administrativo para gestão interna. Sistema em produção com uso diário pela equipe da instituição.</p>
+          <div class="project-tech">
+            <span>Django</span><span>Python</span><span>MySQL</span><span>SQLite</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-tag">Plataforma · Em produção</div>
+            <div class="project-links">
+              <a href="https://www.maltaup.com.br/" target="_blank" class="project-link">↗ Ver projeto</a>
+            </div>
+          </div>
+          <h3 class="project-title">MaltaUP — Plataforma de Cursos</h3>
+          <p class="project-desc">Plataforma de cursos pagos e gratuitos com integração de pagamento via Efí Bank. Fluxo completo de checkout, autenticação e gestão de alunos.</p>
+          <div class="project-tech">
+            <span>Django</span><span>DRF</span><span>Efí Bank API</span><span>MySQL</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-tag">Sistema web · Em produção</div>
+            <div class="project-links">
+              <a href="https://agtplma.site/login/?next=/" target="_blank" class="project-link">↗ Ver projeto</a>
+            </div>
+          </div>
+          <h3 class="project-title">SGT — Gestão de Sinistros</h3>
+          <p class="project-desc">Sistema completo para gestão de sinistros de trânsito com validação de documentos via QR Code, geração dinâmica de PDFs e autenticação integrada.</p>
+          <div class="project-tech">
+            <span>Django</span><span>QR Code</span><span>PDF</span><span>MySQL</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-tag">API · Privado</div>
+          </div>
+          <h3 class="project-title">API — Faculdade Malta</h3>
+          <p class="project-desc">API de gerenciamento e integração de Leads de alunos que se inscrevem no sistema da faculdade. Integração entre sistemas internos via DRF.</p>
+          <div class="project-tech">
+            <span>Django REST Framework</span><span>Python</span><span>MySQL</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-tag">Estudo · React</div>
+            <div class="project-links">
+              <a href="https://spacex-clone-snowy.vercel.app/" target="_blank" class="project-link">↗ Ver projeto</a>
+            </div>
+          </div>
+          <h3 class="project-title">SpaceX Clone</h3>
+          <p class="project-desc">Recriação fiel do site da SpaceX com foco em componentização e boas práticas React. Demonstra capacidade de trabalhar com frontend moderno.</p>
+          <div class="project-tech">
+            <span>React</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMAÇÃO -->
+  <section class="section formacao-section">
+    <div class="container">
+      <p class="eyebrow">05 — Formação</p>
+      <h2 class="section-title">Educação &amp; Certificações</h2>
+
+      <div class="formacao-grid">
+        <div class="formacao-group">
+          <h4 class="formacao-group-title">Graduação</h4>
+          <div class="formacao-item">
+            <span class="formacao-status ongoing">Em andamento</span>
+            <p class="formacao-course">Bacharelado em Engenharia de Software</p>
+            <p class="formacao-inst">UNICIVE – Centro Universitário</p>
+          </div>
+          <div class="formacao-item">
+            <span class="formacao-status done">Concluído</span>
+            <p class="formacao-course">Tecnólogo em Redes de Computadores</p>
+            <p class="formacao-inst">Estácio de Sá</p>
+          </div>
+        </div>
+
+        <div class="formacao-group">
+          <h4 class="formacao-group-title">Certificações</h4>
+          <div class="formacao-item">
+            <p class="formacao-course">Python 3 do Básico ao Avançado</p>
+            <p class="formacao-inst">Cod3r</p>
+          </div>
+          <div class="formacao-item">
+            <p class="formacao-course">Dart: assincronismo, OOP, coleções e APIs</p>
+            <p class="formacao-inst">Alura · 4 certificados</p>
+          </div>
+          <div class="formacao-item">
+            <p class="formacao-course">Administração e Segurança de Redes</p>
+            <p class="formacao-inst">Estácio de Sá</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section contato-section" id="contato">
+    <div class="container">
+      <p class="eyebrow centered">06 — Contato</p>
+      <h2 class="section-title centered">Vamos construir<br>algo juntos?</h2>
+      <p class="contato-sub">Estou disponível para novos projetos, posições remotas e colaborações.</p>
+
+      <div class="contato-grid">
+        <a href="mailto:alissonsts910@gmail.com" class="contato-card">
+          <span class="contato-icon">✉️</span>
+          <span class="contato-label">Email</span>
+          <span class="contato-value">alissonsts910@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/alisson-alencar99/" target="_blank" class="contato-card">
+          <i class="devicon-linkedin-plain"></i>
+          <span class="contato-label">LinkedIn</span>
+          <span class="contato-value">alisson-alencar99</span>
+        </a>
+        <a href="https://github.com/alisu99/" target="_blank" class="contato-card">
+          <i class="devicon-github-plain"></i>
+          <span class="contato-label">GitHub</span>
+          <span class="contato-value">github.com/alisu99</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="nav-logo">AG<span class="dot">.</span></span>
+        <p>© 2025 Alisson Gustavo Alencar Santos. Todos os direitos reservados.</p>
+        <a href="assets/pdf/Curriculo_Alisson_Gustavo_Backend.pdf" target="_blank" class="btn-ghost small">Currículo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/script.js"></script>
 </body>
-
 </html>
